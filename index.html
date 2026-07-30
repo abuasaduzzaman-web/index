@@ -2,154 +2,613 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Dr. Abu Asaduzzaman</title>
 
-<link rel="stylesheet" href="css/style.css">
+<style>
+
+/* =====================
+   General Style
+===================== */
+
+body {
+
+    margin: 0;
+    padding: 0;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    background: #f4f7fb;
+
+    color: #2c3e50;
+
+}
+
+
+.container {
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+}
+
+
+
+/* =====================
+   Navigation
+===================== */
+
+nav {
+
+    background: linear-gradient(
+        90deg,
+        #0b3d91,
+        #1976d2
+    );
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+
+    position: sticky;
+
+    top:0;
+
+    z-index:100;
+
+}
+
+
+nav ul {
+
+    list-style:none;
+
+    margin:0;
+
+    padding:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+}
+
+
+nav li {
+
+    margin:5px 15px;
+
+}
+
+
+nav a {
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    padding:12px 18px;
+
+    display:block;
+
+    border-radius:8px;
+
+    transition:0.3s;
+
+}
+
+
+nav a:hover {
+
+    background:#ffc72c;
+
+    color:#003366;
+
+}
+
+
+
+/* =====================
+   Cards
+===================== */
+
+.card {
+
+    background:white;
+
+    margin:30px 0;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    border-left:8px solid #1976d2;
+
+    box-shadow:
+       0 8px 20px rgba(0,0,0,0.10);
+
+    transition:0.3s;
+
+}
+
+
+.card:hover {
+
+    transform:translateY(-5px);
+
+}
+
+
+
+/* =====================
+   Profile Section
+===================== */
+
+
+.profile {
+
+    display:flex;
+
+    gap:40px;
+
+    align-items:center;
+
+}
+
+
+.photo {
+
+    flex:1;
+
+    text-align:center;
+
+}
+
+
+.photo img {
+
+    width:230px;
+
+    height:230px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:6px solid white;
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.25);
+
+}
+
+
+.bio {
+
+    flex:3;
+
+}
+
+
+.bio h1 {
+
+    color:#0b3d91;
+
+    margin-top:0;
+
+}
+
+
+
+/* =====================
+   Two Columns
+===================== */
+
+.two-column {
+
+    display:flex;
+
+    gap:30px;
+
+}
+
+
+.two-column .card {
+
+    flex:1;
+
+}
+
+
+
+/* =====================
+   Section Titles
+===================== */
+
+
+h2 {
+
+    color:#0b3d91;
+
+    border-bottom:
+
+    4px solid #ffc72c;
+
+    display:inline-block;
+
+    padding-bottom:6px;
+
+}
+
+
+ul {
+
+    line-height:1.9;
+
+}
+
+
+
+/* =====================
+   Top Button
+===================== */
+
+
+.top {
+
+    text-align:right;
+
+}
+
+
+.top a {
+
+    background:#1976d2;
+
+    color:white;
+
+    padding:8px 16px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+}
+
+
+.top a:hover {
+
+    background:#ffc72c;
+
+    color:#003366;
+
+}
+
+
+
+/* =====================
+   Footer
+===================== */
+
+
+footer {
+
+    background:linear-gradient(
+        90deg,
+        #0b3d91,
+        #1976d2
+    );
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+    margin-top:40px;
+
+}
+
+
+
+/* =====================
+   Mobile
+===================== */
+
+
+@media(max-width:768px){
+
+
+.profile,
+.two-column {
+
+    flex-direction:column;
+
+}
+
+
+.photo img {
+
+    width:180px;
+
+    height:180px;
+
+}
+
+
+}
+
+</style>
 
 </head>
 
+
 <body>
 
-<!-- ================= Navigation ================= -->
+
+<!-- Navigation -->
 
 <nav id="top">
-    <ul>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#teaching">Teaching</a></li>
-        <li><a href="#service">Service</a></li>
-        <li><a href="files/Resume.pdf" target="_blank">Resume</a></li>
-    </ul>
+
+<ul>
+
+<li><a href="#research">Research</a></li>
+
+<li><a href="#teaching">Teaching</a></li>
+
+<li><a href="#service">Service</a></li>
+
+<li><a href="#publications">Publications</a></li>
+
+<li>
+<a href="files/Resume.pdf" target="_blank">
+Resume
+</a>
+</li>
+
+</ul>
+
 </nav>
+
+
 
 <div class="container">
 
-<!-- ================= Biography ================= -->
 
-<section class="card biography">
+<!-- Profile -->
 
-    <div class="photo">
-        <img src="images/profile.jpg" alt="Profile Photo">
-    </div>
+<section class="card profile">
 
-    <div class="bio">
 
-        <h1>Dr. Abu Asaduzzaman</h1>
+<div class="photo">
 
-        <p>
-        Professor of Electrical and Computer Engineering
-        </p>
-
-        <p>
-        Welcome to my academic homepage.
-        My research focuses on Artificial Intelligence,
-        Machine Learning, Cybersecurity,
-        Data Analytics, and High-Performance Computing.
-        </p>
-
-        <p>
-        This website contains information about my research,
-        teaching, publications, and professional service.
-        </p>
-
-    </div>
-
-</section>
-
-<!-- ================= Research + News ================= -->
-
-<section class="two-column">
-
-<div class="card">
-
-<h2 id="research">Research</h2>
-
-<ul>
-<li>Artificial Intelligence</li>
-<li>Machine Learning</li>
-<li>Cybersecurity</li>
-<li>Data Mining</li>
-<li>Cloud Computing</li>
-</ul>
+<img src="images/profile.jpg" alt="Profile Photo">
 
 </div>
 
-<div class="card">
 
-<h2>News</h2>
+<div class="bio">
 
-<ul>
-<li>Journal paper accepted.</li>
-<li>NSF proposal submitted.</li>
-<li>Graduate students joined the lab.</li>
-<li>Conference presentation.</li>
-</ul>
+<h1>Dr. Abu Asaduzzaman</h1>
 
-</div>
+<h3>
+Professor<br>
+Department of Electrical and Computer Engineering
+</h3>
 
-</section>
-
-<!-- ================= Teaching ================= -->
-
-<section class="card">
-
-<h2 id="teaching">Teaching</h2>
 
 <p>
 
-Courses taught:
+My research interests include Artificial Intelligence,
+Machine Learning, Cybersecurity, Data Analytics,
+and High-Performance Computing.
 
 </p>
+
+
+<p>
+
+I work on developing intelligent systems and
+data-driven solutions for engineering and
+scientific applications.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<!-- Research + News -->
+
+<section class="two-column">
+
+
+<div class="card" id="research">
+
+
+<h2>Research</h2>
+
+
+<ul>
+
+<li>Artificial Intelligence</li>
+
+<li>Machine Learning</li>
+
+<li>Cybersecurity</li>
+
+<li>Data Analytics</li>
+
+<li>High-Performance Computing</li>
+
+</ul>
+
+
+</div>
+
+
+
+<div class="card">
+
+
+<h2>News</h2>
+
+
+<ul>
+
+<li>Journal paper accepted</li>
+
+<li>Conference presentation</li>
+
+<li>Research project updates</li>
+
+<li>Graduate student achievements</li>
+
+
+</ul>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<!-- Teaching -->
+
+
+<section class="card" id="teaching">
+
+
+<h2>Teaching</h2>
+
 
 <ul>
 
 <li>Machine Learning</li>
+
 <li>Computer Networks</li>
+
 <li>Cybersecurity</li>
+
 <li>Data Structures</li>
+
 
 </ul>
 
-<p class="toplink">
+
+<p class="top">
 
 <a href="#top">↑ Go Top</a>
 
 </p>
 
+
 </section>
 
-<!-- ================= Service ================= -->
 
-<section class="card">
 
-<h2 id="service">Service</h2>
+
+<!-- Service -->
+
+
+<section class="card" id="service">
+
+
+<h2>Service</h2>
+
 
 <ul>
 
 <li>Journal Reviewer</li>
+
 <li>Conference Program Committee</li>
-<li>Faculty Advisor</li>
+
 <li>Department Committees</li>
+
+<li>Professional Activities</li>
+
 
 </ul>
 
-<p class="toplink">
+
+<p class="top">
 
 <a href="#top">↑ Go Top</a>
 
 </p>
 
+
 </section>
+
+
+
+
+<!-- Publications -->
+
+
+<section class="card" id="publications">
+
+
+<h2>Selected Publications</h2>
+
+
+<ol>
+
+<li>Journal Paper Title 1</li>
+
+<li>Conference Paper Title 2</li>
+
+<li>Journal Paper Title 3</li>
+
+
+</ol>
+
+
+<p class="top">
+
+<a href="#top">↑ Go Top</a>
+
+</p>
+
+
+</section>
+
+
 
 </div>
 
+
+
 <footer>
 
-© 2026 Dr. Abu Asaduzzaman
+© 2026 Dr. Abu Asaduzzaman  
+<br>
+Electrical and Computer Engineering
 
 </footer>
 
+
+
 </body>
+
 </html>
