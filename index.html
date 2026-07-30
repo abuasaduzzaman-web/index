@@ -8,22 +8,22 @@
 
 <title>Dr. Abu Asaduzzaman</title>
 
+
 <style>
 
-/* =====================
-   General Style
-===================== */
+/* =========================
+   Basic Page Style
+========================= */
 
 body {
 
     margin: 0;
-    padding: 0;
 
     font-family: "Segoe UI", Arial, sans-serif;
 
-    background: #f4f7fb;
+    background: #F7F9FB;
 
-    color: #2c3e50;
+    color: #334E68;
 
 }
 
@@ -40,310 +40,278 @@ body {
 
 
 
-/* =====================
-   Navigation
-===================== */
+/* =========================
+   Navigation Bar
+========================= */
 
 nav {
 
-    background: linear-gradient(
-        90deg,
-        #0b3d91,
-        #1976d2
-    );
+    background: #243B53;
 
-    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-
-    position: sticky;
-
-    top:0;
-
-    z-index:100;
+    border-bottom: 4px solid #7FB3B5;
 
 }
 
 
 nav ul {
 
-    list-style:none;
+    list-style: none;
 
-    margin:0;
+    margin: 0;
 
-    padding:0;
+    padding: 0;
 
-    display:flex;
+    display: flex;
 
-    justify-content:center;
+    justify-content: center;
 
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 
 }
 
 
 nav li {
 
-    margin:5px 15px;
+    margin: 0 15px;
 
 }
 
 
 nav a {
 
-    color:white;
+    color: white;
 
-    text-decoration:none;
+    text-decoration: none;
 
-    font-size:17px;
+    font-size: 17px;
 
-    font-weight:600;
+    padding: 16px 12px;
 
-    padding:12px 18px;
-
-    display:block;
-
-    border-radius:8px;
-
-    transition:0.3s;
+    display: block;
 
 }
 
 
 nav a:hover {
 
-    background:#ffc72c;
-
-    color:#003366;
+    color: #B8E0E2;
 
 }
 
 
 
-/* =====================
-   Cards
-===================== */
+/* =========================
+   Fixed Frame Style
+========================= */
 
-.card {
+.frame {
 
-    background:white;
+    background: white;
 
-    margin:30px 0;
+    border: 1px solid #D9E2EC;
 
-    padding:30px;
+    border-radius: 8px;
 
-    border-radius:18px;
+    padding: 30px;
 
-    border-left:8px solid #1976d2;
-
-    box-shadow:
-       0 8px 20px rgba(0,0,0,0.10);
-
-    transition:0.3s;
-
-}
-
-
-.card:hover {
-
-    transform:translateY(-5px);
+    margin: 25px 0;
 
 }
 
 
 
-/* =====================
+/* =========================
    Profile Section
-===================== */
-
+========================= */
 
 .profile {
 
-    display:flex;
+    display: flex;
 
-    gap:40px;
+    align-items: center;
 
-    align-items:center;
+    gap: 40px;
 
 }
 
 
 .photo {
 
-    flex:1;
+    flex: 1;
 
-    text-align:center;
+    text-align: center;
 
 }
 
 
 .photo img {
 
-    width:230px;
+    width: 220px;
 
-    height:230px;
+    height: 220px;
 
-    object-fit:cover;
+    object-fit: cover;
 
-    border-radius:50%;
+    border-radius: 10px;
 
-    border:6px solid white;
-
-    box-shadow:
-        0 5px 20px rgba(0,0,0,0.25);
+    border: 5px solid #E6EEF2;
 
 }
 
 
-.bio {
+.biography {
 
-    flex:3;
-
-}
-
-
-.bio h1 {
-
-    color:#0b3d91;
-
-    margin-top:0;
+    flex: 3;
 
 }
 
 
+.biography h1 {
 
-/* =====================
-   Two Columns
-===================== */
+    color: #243B53;
+
+    font-size: 32px;
+
+    margin-top: 0;
+
+}
+
+
+.biography h3 {
+
+    color: #2F6F73;
+
+    font-weight: normal;
+
+}
+
+
+
+/* =========================
+   Two Column Section
+========================= */
 
 .two-column {
 
-    display:flex;
+    display: flex;
 
-    gap:30px;
-
-}
-
-
-.two-column .card {
-
-    flex:1;
+    gap: 25px;
 
 }
 
 
+.two-column .frame {
 
-/* =====================
-   Section Titles
-===================== */
+    flex: 1;
 
+}
+
+
+
+/* =========================
+   Headings
+========================= */
 
 h2 {
 
-    color:#0b3d91;
+    color: #243B53;
 
-    border-bottom:
+    font-size: 24px;
 
-    4px solid #ffc72c;
+    border-bottom: 2px solid #9CC5C8;
 
-    display:inline-block;
-
-    padding-bottom:6px;
+    padding-bottom: 8px;
 
 }
+
 
 
 ul {
 
-    line-height:1.9;
+    line-height: 1.8;
 
 }
 
 
 
-/* =====================
-   Top Button
-===================== */
-
+/* =========================
+   Go Top Link
+========================= */
 
 .top {
 
-    text-align:right;
+    text-align: right;
+
+    margin-top: 20px;
 
 }
 
 
 .top a {
 
-    background:#1976d2;
+    color: #2F6F73;
 
-    color:white;
+    text-decoration: none;
 
-    padding:8px 16px;
-
-    border-radius:20px;
-
-    text-decoration:none;
-
-    font-size:14px;
+    font-size: 14px;
 
 }
 
 
 .top a:hover {
 
-    background:#ffc72c;
-
-    color:#003366;
+    text-decoration: underline;
 
 }
 
 
 
-/* =====================
+/* =========================
    Footer
-===================== */
-
+========================= */
 
 footer {
 
-    background:linear-gradient(
-        90deg,
-        #0b3d91,
-        #1976d2
-    );
+    background: #243B53;
 
-    color:white;
+    color: white;
 
-    text-align:center;
+    text-align: center;
 
-    padding:25px;
+    padding: 25px;
 
-    margin-top:40px;
+    margin-top: 40px;
 
 }
 
 
 
-/* =====================
-   Mobile
-===================== */
-
+/* =========================
+   Mobile View
+========================= */
 
 @media(max-width:768px){
 
 
-.profile,
+.profile {
+
+    flex-direction: column;
+
+}
+
+
 .two-column {
 
-    flex-direction:column;
+    flex-direction: column;
 
 }
 
 
 .photo img {
 
-    width:180px;
+    width: 180px;
 
-    height:180px;
+    height: 180px;
 
 }
 
@@ -355,10 +323,14 @@ footer {
 </head>
 
 
+
 <body>
 
 
-<!-- Navigation -->
+<!-- =========================
+     Navigation
+========================= -->
+
 
 <nav id="top">
 
@@ -384,12 +356,17 @@ Resume
 
 
 
+
 <div class="container">
 
 
-<!-- Profile -->
 
-<section class="card profile">
+<!-- =========================
+     Profile and Biography
+========================= -->
+
+
+<section class="frame profile">
 
 
 <div class="photo">
@@ -399,9 +376,14 @@ Resume
 </div>
 
 
-<div class="bio">
 
-<h1>Dr. Abu Asaduzzaman</h1>
+<div class="biography">
+
+
+<h1>
+Dr. Abu Asaduzzaman
+</h1>
+
 
 <h3>
 Professor<br>
@@ -409,7 +391,10 @@ Department of Electrical and Computer Engineering
 </h3>
 
 
+
 <p>
+
+Welcome to my academic homepage.
 
 My research interests include Artificial Intelligence,
 Machine Learning, Cybersecurity, Data Analytics,
@@ -420,9 +405,9 @@ and High-Performance Computing.
 
 <p>
 
-I work on developing intelligent systems and
-data-driven solutions for engineering and
-scientific applications.
+My research focuses on developing intelligent,
+data-driven solutions for engineering and scientific
+applications.
 
 </p>
 
@@ -435,12 +420,15 @@ scientific applications.
 
 
 
-<!-- Research + News -->
+<!-- =========================
+     Research and News
+========================= -->
+
 
 <section class="two-column">
 
 
-<div class="card" id="research">
+<div class="frame" id="research">
 
 
 <h2>Research</h2>
@@ -465,7 +453,8 @@ scientific applications.
 
 
 
-<div class="card">
+
+<div class="frame">
 
 
 <h2>News</h2>
@@ -475,12 +464,11 @@ scientific applications.
 
 <li>Journal paper accepted</li>
 
+<li>Research proposal submitted</li>
+
 <li>Conference presentation</li>
 
-<li>Research project updates</li>
-
 <li>Graduate student achievements</li>
-
 
 </ul>
 
@@ -493,10 +481,13 @@ scientific applications.
 
 
 
-<!-- Teaching -->
+
+<!-- =========================
+     Teaching
+========================= -->
 
 
-<section class="card" id="teaching">
+<section class="frame" id="teaching">
 
 
 <h2>Teaching</h2>
@@ -512,15 +503,14 @@ scientific applications.
 
 <li>Data Structures</li>
 
-
 </ul>
 
 
-<p class="top">
+<div class="top">
 
 <a href="#top">↑ Go Top</a>
 
-</p>
+</div>
 
 
 </section>
@@ -528,10 +518,13 @@ scientific applications.
 
 
 
-<!-- Service -->
+
+<!-- =========================
+     Service
+========================= -->
 
 
-<section class="card" id="service">
+<section class="frame" id="service">
 
 
 <h2>Service</h2>
@@ -547,15 +540,14 @@ scientific applications.
 
 <li>Professional Activities</li>
 
-
 </ul>
 
 
-<p class="top">
+<div class="top">
 
 <a href="#top">↑ Go Top</a>
 
-</p>
+</div>
 
 
 </section>
@@ -563,10 +555,13 @@ scientific applications.
 
 
 
-<!-- Publications -->
+
+<!-- =========================
+     Publications
+========================= -->
 
 
-<section class="card" id="publications">
+<section class="frame" id="publications">
 
 
 <h2>Selected Publications</h2>
@@ -574,24 +569,24 @@ scientific applications.
 
 <ol>
 
-<li>Journal Paper Title 1</li>
+<li>Research paper title 1</li>
 
-<li>Conference Paper Title 2</li>
+<li>Research paper title 2</li>
 
-<li>Journal Paper Title 3</li>
-
+<li>Research paper title 3</li>
 
 </ol>
 
 
-<p class="top">
+<div class="top">
 
 <a href="#top">↑ Go Top</a>
 
-</p>
+</div>
 
 
 </section>
+
 
 
 
@@ -599,10 +594,14 @@ scientific applications.
 
 
 
+<!-- =========================
+     Footer
+========================= -->
+
+
 <footer>
 
-© 2026 Dr. Abu Asaduzzaman  
-<br>
+© 2026 Dr. Abu Asaduzzaman<br>
 Electrical and Computer Engineering
 
 </footer>
