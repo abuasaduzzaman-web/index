@@ -1,164 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abu Asaduzzaman</title>
 
-<style>
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    background: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-}
+<title>Dr. Abu Asaduzzaman</title>
 
-header {
-    background: #005293;
-    color: white;
-    text-align: center;
-    padding: 30px;
-}
-
-nav {
-    background: #003b6f;
-    text-align: center;
-    padding: 10px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
-    padding: 20px;
-}
-
-.card {
-    background: white;
-    margin-bottom: 25px;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.1);
-}
-
-.two-column {
-    display: flex;
-    gap: 40px;
-    align-items: center;
-}
-
-.left {
-    flex: 1;
-}
-
-.right {
-    flex: 2;
-    text-align: center;
-}
-
-.right img {
-    width: 220px;
-    border-radius: 8px;
-}
-
-.half {
-    display: flex;
-    gap: 30px;
-}
-
-.column {
-    flex: 1;
-}
-
-footer {
-    background: #003b6f;
-    color: white;
-    text-align: center;
-    padding: 15px;
-}
-
-/* Responsive layout */
-@media (max-width: 768px) {
-
-.two-column,
-.left img {
-    width: 180px;
-}
-
-.half {
-    flex-direction: column;
-}
-
-}
-</style>
+<link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#research">Research</a>
-    <a href="#teaching">Teaching</a>
-    <a href="#publications">Publications</a>
-    <a href="#contact">Contact</a>
+<!-- ================= Navigation ================= -->
+
+<nav id="top">
+    <ul>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="files/Resume.pdf" target="_blank">Resume</a></li>
+    </ul>
 </nav>
 
 <div class="container">
 
-<!-- About -->
+<!-- ================= Biography ================= -->
 
-<section id="about" class="card">
-<div class="two-column">
+<section class="card biography">
 
-<div class="left">
+    <div class="photo">
+        <img src="images/profile.jpg" alt="Profile Photo">
+    </div>
 
-<img src="images/Y2021_Abu.jpg" alt="Profile Photo">
+    <div class="bio">
 
-</div>
+        <h1>Dr. Abu Asaduzzaman</h1>
 
-<div class="right">
-<h2>Abu Asaduzzaman</h2>
+        <p>
+        Professor of Electrical and Computer Engineering
+        </p>
 
-<p>
-Abu Asaduzzaman joined Wichita State University (WSU) as an Assistant Professor of 
-    Computer Architecture in August 2010. He holds both a Ph.D. and an M.S. in 
-    Computer Engineering from Florida Atlantic University. Dr. Asaduzzaman’s research 
-    interests include computer systems, high-performance computing, and machine learning. 
-    He has authored over 27 refereed journal articles and more than 117 peer-reviewed 
-    conference papers. Dr. Asaduzzaman has received research grants from Kansas NSF EPSCoR, 
-    the Department of Energy's Argonne National Laboratory, Nvidia, NetApp, and other 
-    organizations. He reviews for NSF programs and IEEE journals. He serves as a committee 
-    member for IEEE conferences. A senior member of the IEEE and a member of the ASEE, 
-    he is also affiliated with honor societies including Phi Kappa Phi, Tau Beta Pi, 
-    Upsilon Pi Epsilon, and Golden Key. As an invited speaker, Dr. Asaduzzaman has 
-    presented his research at professional forums in Bangladesh, Japan, Sri Lanka, 
-    Thailand, Turkey, and the USA. He is currently a full professor and serves as the 
-    Associate Chair of his department.
-</p>
+        <p>
+        Welcome to my academic homepage.
+        My research focuses on Artificial Intelligence,
+        Machine Learning, Cybersecurity,
+        Data Analytics, and High-Performance Computing.
+        </p>
 
-</div>
+        <p>
+        This website contains information about my research,
+        teaching, publications, and professional service.
+        </p>
 
-</div>
+    </div>
+
 </section>
 
-<!-- Research and News -->
+<!-- ================= Research + News ================= -->
 
-<section class="half">
+<section class="two-column">
 
-<div class="column card">
+<div class="card">
 
 <h2 id="research">Research</h2>
 
@@ -166,66 +70,75 @@ Abu Asaduzzaman joined Wichita State University (WSU) as an Assistant Professor 
 <li>Artificial Intelligence</li>
 <li>Machine Learning</li>
 <li>Cybersecurity</li>
-<li>Data Analytics</li>
+<li>Data Mining</li>
 <li>Cloud Computing</li>
 </ul>
 
 </div>
 
-<div class="column card">
+<div class="card">
 
 <h2>News</h2>
 
 <ul>
-<li>New journal paper accepted.</li>
+<li>Journal paper accepted.</li>
 <li>NSF proposal submitted.</li>
 <li>Graduate students joined the lab.</li>
-<li>Conference presentation in 2026.</li>
+<li>Conference presentation.</li>
 </ul>
 
 </div>
 
 </section>
 
-<!-- Teaching -->
+<!-- ================= Teaching ================= -->
 
-<section id="teaching" class="card">
+<section class="card">
 
-<h2>Teaching</h2>
-
-<ul>
-<li>Data Structures</li>
-<li>Computer Networks</li>
-<li>Cybersecurity</li>
-<li>Machine Learning</li>
-</ul>
-
-</section>
-
-<!-- Publications -->
-
-<section id="publications" class="card">
-
-<h2>Selected Publications</h2>
-
-<ol>
-<li>Journal Paper 1</li>
-<li>Conference Paper 2</li>
-<li>Journal Paper 3</li>
-</ol>
-
-</section>
-
-<!-- Contact -->
-
-<section id="contact" class="card">
-
-<h2>Contact</h2>
+<h2 id="teaching">Teaching</h2>
 
 <p>
-Department of Electrical and Computer Engineering<br>
-Wichita State University<br>
-Email: your.email@wichita.edu
+
+Courses taught:
+
+</p>
+
+<ul>
+
+<li>Machine Learning</li>
+<li>Computer Networks</li>
+<li>Cybersecurity</li>
+<li>Data Structures</li>
+
+</ul>
+
+<p class="toplink">
+
+<a href="#top">↑ Go Top</a>
+
+</p>
+
+</section>
+
+<!-- ================= Service ================= -->
+
+<section class="card">
+
+<h2 id="service">Service</h2>
+
+<ul>
+
+<li>Journal Reviewer</li>
+<li>Conference Program Committee</li>
+<li>Faculty Advisor</li>
+<li>Department Committees</li>
+
+</ul>
+
+<p class="toplink">
+
+<a href="#top">↑ Go Top</a>
+
 </p>
 
 </section>
