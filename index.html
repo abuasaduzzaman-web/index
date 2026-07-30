@@ -2,138 +2,236 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Abu Asaduzzaman</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Abu Asaduzzaman</title>
 
-<link rel="stylesheet" href="style.css">
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #005293;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+nav {
+    background: #003b6f;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.two-column {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.left {
+    flex: 2;
+}
+
+.right {
+    flex: 1;
+    text-align: center;
+}
+
+.right img {
+    width: 220px;
+    border-radius: 8px;
+}
+
+.half {
+    display: flex;
+    gap: 30px;
+}
+
+.column {
+    flex: 1;
+}
+
+footer {
+    background: #003b6f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+
+.two-column,
+.half {
+    flex-direction: column;
+}
+
+.right img {
+    width: 180px;
+}
+
+}
+</style>
+
 </head>
 
 <body>
 
 <header>
-<section class="two-column">
-    <div class="left">
-      <h1>Abu Asaduzzaman</h1>
-         <img src="images/Y2021_Abu.jpg" alt="My Photo" width="200">
-      <p>Professor of Computer Engineering<br></p>
-    </div>
-    <div class="right">
-      <h1>Abu Asaduzzaman</h1>
-         <img src="images/Y2021_Abu.jpg" alt="My Photo" width="200">
-      <p>Professor of Computer Engineering<br></p>
-    </div>
-</section>
+    <h1>Dr. Abu Asaduzzaman</h1>
+    <p>Professor | Electrical and Computer Engineering</p>
 </header>
 
 <nav>
-
-<a href="#resume">Resume</a>
-
-<a href="#teaching">Teaching</a>
-
-<a href="#research">Research</a>
-
-<a href="#publications">Publications</a>
-
-<a href="#contact">Contact</a>
-
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#publications">Publications</a>
+    <a href="#contact">Contact</a>
 </nav>
 
-<section id="resume">
+<div class="container">
 
-<h2>Curriculum Vitae (CV)</h2>
+<!-- About -->
+
+<section id="about" class="card">
+<div class="two-column">
+
+<div class="left">
+<h2>About Me</h2>
 
 <p>
-
-Coming soon...
-
+Welcome to my academic homepage.
+I am a Professor in the Department of Electrical and Computer Engineering.
+My research interests include Artificial Intelligence, Machine Learning,
+Cybersecurity, Data Analytics, and High-Performance Computing.
 </p>
+
+</div>
+
+<div class="right">
+
+<img src="images/profile.jpg" alt="Profile Photo">
+
+</div>
+
+</div>
+</section>
+
+<!-- Research and News -->
+
+<section class="half">
+
+<div class="column card">
+
+<h2 id="research">Research</h2>
+
+<ul>
+<li>Artificial Intelligence</li>
+<li>Machine Learning</li>
+<li>Cybersecurity</li>
+<li>Data Analytics</li>
+<li>Cloud Computing</li>
+</ul>
+
+</div>
+
+<div class="column card">
+
+<h2>News</h2>
+
+<ul>
+<li>New journal paper accepted.</li>
+<li>NSF proposal submitted.</li>
+<li>Graduate students joined the lab.</li>
+<li>Conference presentation in 2026.</li>
+</ul>
+
+</div>
 
 </section>
 
-<section id="teaching">
+<!-- Teaching -->
+
+<section id="teaching" class="card">
 
 <h2>Teaching</h2>
 
 <ul>
-
-<li>Large Language Models for Interdisciplinary Applications (307dev)</li>
-
-<li>Introduction to Computer Architecture (394)</li>
-
-<li>Modelong, Simulation, and Analysis (475dev)</li>
-
-<li>Introduction to Hardware Security (477G)</li>
-
-<li>Microprocessor-Based System Design (594/L)</li>
-
-<li>High Performance Computer Systems (694)</li>
-
-<li>Hardware-Based Cybersecurity (696)</li>
-
-<li>Machine Learning Essentials and Applications (707)</li>
-
-<li>Embedded Systems Programming (738)</li>
-
-<li>Parallel Computing (794)</li>
-
-<li>Computer Systems in Data Alanytics (875)</li>
-
+<li>Data Structures</li>
+<li>Computer Networks</li>
+<li>Cybersecurity</li>
+<li>Machine Learning</li>
 </ul>
 
 </section>
 
-<section id="research">
+<!-- Publications -->
 
-<h2>Research Interests</h2>
-
-<ul>
-
-<li>Computer Architecture / High Performance Computing</li>
-
-<li>Machine Learning / Data Analysis</li>
-
-<li>Parallel Computing/Programming</li>
-
-<li>Interdisciplinary Research / STEM Education</li>
-
-</ul>
-
-</section>
-
-<section id="publications">
+<section id="publications" class="card">
 
 <h2>Selected Publications</h2>
 
-<p>
-
-Coming soon...
-
-</p>
+<ol>
+<li>Journal Paper 1</li>
+<li>Conference Paper 2</li>
+<li>Journal Paper 3</li>
+</ol>
 
 </section>
 
-<section id="contact">
+<!-- Contact -->
+
+<section id="contact" class="card">
 
 <h2>Contact</h2>
 
 <p>
-
-Email:
-
-abuasaduzzaman@gmail.com
-
+Department of Electrical and Computer Engineering<br>
+Wichita State University<br>
+Email: your.email@wichita.edu
 </p>
 
 </section>
 
+</div>
+
 <footer>
 
-© 2026 Abu Asaduzzaman
+© 2026 Dr. Abu Asaduzzaman
 
 </footer>
-
-<script src="script.js"></script>
 
 </body>
 </html>
