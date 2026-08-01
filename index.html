@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Abu Asaduzzaman</title>
+
+
+<style>
+
+/* =========================
+   Basic Page Style
+========================= */
+
+body {
+
+    margin: 0;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    background: #F7F9FB;
+
+    color: #334E68;
+
+}
+
+
+.container {
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+}
+
+
+
+/* =========================
+   Navigation Bar
+========================= */
+
+nav {
+
+    background: #243B53;
+
+    border-bottom: 4px solid #7FB3B5;
+
+}
+
+
+nav ul {
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+}
+
+
+nav li {
+
+    margin: 0 15px;
+
+}
+
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    padding: 16px 12px;
+
+    display: block;
+
+}
+
+
+nav a:hover {
+
+    color: #B8E0E2;
+
+}
+
+
+
+/* =========================
+   Fixed Frame Style
+========================= */
+
+.frame {
+
+    background: white;
+
+    border: 1px solid #D9E2EC;
+
+    border-radius: 8px;
+
+    padding: 30px;
+
+    margin: 25px 0;
+
+}
+
+
+
+/* =========================
+   Profile Section
+========================= */
+
+.profile {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 40px;
+
+}
+
+
+.photo {
+
+    flex: 1;
+
+    text-align: center;
+
+}
+
+
+.photo img {
+
+    width: 220px;
+
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    border: 5px solid #E6EEF2;
+
+}
+
+
+.biography {
+
+    flex: 3;
+
+}
+
+
+.biography h1 {
+
+    color: #243B53;
+
+    font-size: 32px;
+
+    margin-top: 0;
+
+}
+
+
+.biography h3 {
+
+    color: #2F6F73;
+
+    font-weight: normal;
+
+}
+
+
+
+/* =========================
+   Two Column Section
+========================= */
+
+.two-column {
+
+    display: flex;
+
+    gap: 25px;
+
+}
+
+
+.two-column .frame {
+
+    flex: 1;
+
+}
+
+
+
+/* =========================
+   Headings
+========================= */
+
+h2 {
+
+    color: #243B53;
+
+    font-size: 24px;
+
+    border-bottom: 2px solid #9CC5C8;
+
+    padding-bottom: 8px;
+
+}
+
+
+
+ul {
+
+    line-height: 1.8;
+
+}
+
+
+
+/* =========================
+   Go Top Link
+========================= */
+
+.top {
+
+    text-align: right;
+
+    margin-top: 20px;
+
+}
+
+
+.top a {
+
+    color: #2F6F73;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+}
+
+
+.top a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+
+    background: #243B53;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 40px;
+
+}
+
+
+
+/* =========================
+   Mobile View
+========================= */
+
+@media(max-width:768px){
+
+
+.profile {
+
+    flex-direction: column;
+
+}
+
+
+.two-column {
+
+    flex-direction: column;
+
+}
+
+
+.photo img {
+
+    width: 180px;
+
+    height: 180px;
+
+}
+
+
+}
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+<!-- =========================
+     Navigation
+========================= -->
+<nav id="top">
+<ul>
+<li><a href="index.html"><span style="font-weight: bold; color: gold;">Research</span></a></li>
+<!-- The 'index.html' file serves as the landing (Research) page. -->
+
+<li><a href="teaching.html">Teaching</a></li>
+
+<li><a href="services.html">Services</a></li>
+
+<li><a href="quicklinks.html">Quicklinks</a></li>
+
+<li><a href="docs/Abu_CV26.pdf" target="_blank">Resume</a></li>
+</ul>
+</nav>
+
+
+<div class="container">
+
+
+<!-- =========================
+     Profile and Biography
+========================= -->
+<section class="frame profile">
+
+<div class="photo">
+<img src="docs/Y2021_Abu_VA.png" alt="Profile Photo">
+</div>
+
+<div class="biography">
+<h3>Abu Asaduzzaman, Professor of Computer Engineering</h3>
+<p>
+Abu Asaduzzaman joined Wichita State University as an Assistant Professor of 
+   Computer Engineering in August 2010. He is currently a full professor and serves 
+   as the Associate Chair of his department. Dr. Asaduzzaman’s research interests 
+   include high performance computing, machine learning, data analytics, and cybersecurity. 
+   He has authored over 150 research articles. He has received research grants from NSF 
+   EPSCoR, DoE Argonne National Laboratory, Nvidia, NetApp, and other organizations. 
+   Dr. Asaduzzaman reviews for NSF and other programs. He serves for IEEE Regon, 
+   Section, and conferences. He is affiliated with student honor societies including 
+   PKP, TBP, UPE, and Golden Key. As an invited/guest speaker, he has presented his 
+   research at expert forums in Bangladesh, Japan, Sri Lanka, Thailand, Turkey, 
+   and the USA.
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     Research and News
+========================= -->
+<section class="two-column">
+
+<div class="frame" id="research">
+<h3>Research Interests</h3>
+<ul>
+<li>Computer Architecture / Embedded Systems</li>
+<li>Machine Learning / Data Analytics</li>
+<li>Hardware-Based Security / Cybersecurity & AI</li>
+<li>High Performance Computing / Parallel Programming</li>
+<li>Interdisciplinary Research / STEM Education</li>
+</ul>
+<hr>
+Link to <a href="https://www.wichita.edu/academics/engineering/ECE/research/CAPPLab/index.php" target="_blank">Abu's Research Laboratory</a><br>
+Link to <a href="docs/Abu_CV26.pdf" target="_blank">Abu's Curriculum Vitae</a>
+<div class="top">
+<a href="#top">↑ Go Top</a>
+</div>
+</div>
+
+<div class="frame">
+<h3>News</h3>
+<ul>
+<li>Awarded: Fleet Management, J3D Labs, 2026-2027</li>
+<li>Awarded: ML for Power Grids, DoE VFP at Argonne, 2025</li>
+<li>Awarded: ML for Genomic Data, Flossie West Trust, 2025</li>
+<li>Accepted: WNoC Systems, J. of Supercomputing, 2026</li>
+<li>Accepted: Cloud-Edge Computing, SIMULATION J., 2026</li>
+</ul>
+<div class="top">
+<a href="#top">↑ Go Top</a>
+</div>
+</div>
+
+</section>
+
+
+</body>
+</html>
